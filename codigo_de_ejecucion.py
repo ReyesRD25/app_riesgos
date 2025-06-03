@@ -33,13 +33,13 @@ def ejecutar_modelos(df):
    x_ead = creacion_variables(calidad_datos(df.copy()))
    x_lgd = creacion_variables(calidad_datos(df.copy()))
 
-   with open('pipe_ejecucion_pd.pickle', mode='rb') as file:
+   with open('pe_pd.pickle', mode='rb') as file:
       pipe_ejecucion_pd = pickle.load(file)
 
-   with open('pipe_ejecucion_ead.pickle', mode='rb') as file:
+   with open('pe_ead.pickle', mode='rb') as file:
       pipe_ejecucion_ead = pickle.load(file)
 
-   with open('pipe_ejecucion_lgd.pickle', mode='rb') as file:
+   with open('pe_lgd.pickle', mode='rb') as file:
       pipe_ejecucion_lgd = pickle.load(file)
 
    #7. Ejecucion
